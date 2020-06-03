@@ -38,3 +38,4 @@ async def xkcd(ctx,num=None,**kwargs):
         await ctx.send(embed = embed)
 # Token here
 bot.run(TOKEN)
+#Made by @Extr3mis#9663
