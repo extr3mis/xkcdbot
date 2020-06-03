@@ -6,7 +6,7 @@ A Discord bot written in discord.py for getting xkcd comics. Made with asyncio a
 **Python 3.5.3 or higher is required**
 
 To install the bot you can just run the following command:
-.. code:: sh
+
 
     $ git clone https://github.com/extr3mis/xkcdbot
     $ cd xkcdbot
@@ -16,7 +16,6 @@ Running
 ---------
 Make a Discord bot account and copy the token. Save the token as an environment variable using the key `DISCORD_TOKEN`. Once done just run the following commands:
 
-.. code:: sh
 
     $ cd xkcdbot
     $ python3 main.py
