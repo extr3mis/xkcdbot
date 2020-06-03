@@ -1,2 +1,29 @@
 # xkcdbot
 A Discord bot written in discord.py for getting xkcd comics. Made with asyncio and aiohttp to be block-free. 
+ 
+  Installing
+----------
+**Python 3.5.3 or higher is required**
+
+To install the bot you can just run the following command:
+.. code:: sh
+
+    $ git clone https://github.com/extr3mis/xkcdbot
+    $ cd xkcdbot
+    $ python3 -m pip install -U requirements.txt
+    
+Running
+---------
+Make a Discord bot account and copy the token. Save the token as an environment variable using the key `DISCORD_TOKEN`. Once done just run the following commands:
+
+.. code:: sh
+
+    $ cd xkcdbot
+    $ python3 main.py
+
+Usage
+---------
+To use the bot just type `!x` or `!xkcd` followed by the comic number. To get the latest comic, leave the number blank. 
+
+You can reach me on Discord @Extr3mis#9663.
+
