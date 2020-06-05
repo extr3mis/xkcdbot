@@ -8,6 +8,7 @@ import os
 import datetime
 TOKEN = os.getenv("DISCORD_TOKEN")
 
+
 class bot(Bot): #creating subclass for async implementation
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs) #inheriting
@@ -29,10 +30,12 @@ async def xkcd(ctx,num=None,**kwargs):
         async with bot.session.get(url) as resp: #getting data
             print(resp.status)
             data = await resp.json() #Pulling data
-        em = discord.Embed(title=data['safe_title'], color = 0x000000, timestamp=datetime.datetime.now()) #Because black is nice.
+        num = data['num']
+        alt = data['alt']
+        title = data['safe_title']
+        desc = f'{alt} Link to the original [here](https://xkcd.com/{num}).'
+        em = discord.Embed(title=f'{title}: #{num}', color = 0x000000, timestamp=datetime.datetime.now(), description = desc) #Because black is nice.
         em.set_image(url = data['img']) #making embed
-        em.add_field(name='Number',value=str(data['num']))
         em.set_footer(text=f'Requested by {ctx.message.author.display_name}')
         await ctx.send(embed = em)
 bot.run(TOKEN)
-#Made by @Extr3mis#9663
