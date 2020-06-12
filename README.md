@@ -10,7 +10,7 @@ To install the bot you can just run the following command:
 
     $ git clone https://github.com/extr3mis/xkcdbot
     $ cd xkcdbot
-    $ python3 -m pip install -r requirements.txt
+    $ python -m pip install -r requirements.txt
     
 Running
 ---------
@@ -18,7 +18,7 @@ Make a Discord bot account and copy the token. Save the token as an environment 
 
 
     $ cd xkcdbot
-    $ python3 main.py
+    $ python main.py
 
 Usage
 ---------
