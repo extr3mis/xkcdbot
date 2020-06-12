@@ -39,3 +39,4 @@ async def xkcd(ctx,num=None,**kwargs):
         em.set_footer(text=f'Requested by {ctx.message.author.display_name}')
         await ctx.send(embed = em)
 bot.run(TOKEN)
+#Made by @Extr3mis#9663
