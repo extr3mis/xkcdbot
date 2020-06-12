@@ -10,7 +10,7 @@ To install the bot you can just run the following command:
 
     $ git clone https://github.com/extr3mis/xkcdbot
     $ cd xkcdbot
-    $ python3 -m pip install -U requirements.txt
+    $ python3 -m pip install -r requirements.txt
     
 Running
 ---------
