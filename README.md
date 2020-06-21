@@ -1,4 +1,4 @@
-<img src='https://img.shields.io/badge/Python-3-blue'> <img src='https://img.shields.io/badge/license-MIT-green'> <img src='https://img.shields.io/badge/async-enabled-blue'> <img src='https://img.shields.io/badge/dependecy-discord.py-blue'> <img src='https://img.shields.io/badge/discord-Extr3mis%239663-blueviolet'>
+<img src='https://img.shields.io/badge/Python-3-blue'> <img src='https://img.shields.io/badge/license-MIT-green'> <img src='https://img.shields.io/badge/async-enabled-blue'> <img src='https://img.shields.io/badge/dependecy-discord.py-blue'> <a href='https://discord.com/@me/418872989765992458'><img src='https://img.shields.io/badge/discord-Extr3mis%239663-blueviolet'></a>
 
 # xkcdbot
 A Discord bot written in discord.py for getting xkcd comics. Made with asyncio and aiohttp to be block-free. 
@@ -26,5 +26,5 @@ Usage
 ---------
 To use the bot just type `!x` or `!xkcd` followed by the comic number. To get the latest comic, leave the number blank. 
 
-You can reach me on Discord @Extr3mis#9663.
+You can reach me on Discord [@Extr3mis#9663]('https://discord.com/me/418872989765992458').
 
