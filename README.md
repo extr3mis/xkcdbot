@@ -1,3 +1,5 @@
+<img src='https://img.shields.io/badge/Python-3-blue'> <img src='https://img.shields.io/badge/license-MIT-green'> <img src='https://img.shields.io/badge/async-enabled-blue'> <img src='https://img.shields.io/badge/dependecy-discord.py-blue'> <img src='https://img.shields.io/badge/discord-Extr3mis#9663-blueviolet'>
+
 # xkcdbot
 A Discord bot written in discord.py for getting xkcd comics. Made with asyncio and aiohttp to be block-free. 
  
