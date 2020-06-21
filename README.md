@@ -26,5 +26,5 @@ Usage
 ---------
 To use the bot just type `!x` or `!xkcd` followed by the comic number. To get the latest comic, leave the number blank. 
 
-You can reach me on Discord [@Extr3mis#9663]('https://discord.com/me/418872989765992458').
+You can reach me on Discord [@Extr3mis#9663](https://discord.com/me/418872989765992458 'Reach me on Discord').
 
