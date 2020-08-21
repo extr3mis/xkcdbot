@@ -45,10 +45,8 @@ class Menu(menus.Menu):
         await self.message.edit(embed = await getcomic(self.ctx,self.num))
     @menus.button(rand)#random comic
     async def rand(self,payload):
-        async with bot.session.get('https://xkcd.com/info.0.json') as resp: #getting data
-            print(resp.status)
-            data = await resp.json() #Pulling data
-        self.num = random.randint(1,int(data['num']))
+        num = await latest()
+        self.num = random.randint(1,int(num))
         await self.message.edit(embed = await getcomic(self.ctx,self.num))
 
 @bot.command(aliases=['x']) #command acceptor
