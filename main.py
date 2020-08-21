@@ -25,28 +25,29 @@ bot = bot(command_prefix = "!") #creating instance of bot
 
 class Menu(menus.Menu): 
 #Menu required for reaction buttons.
-    def __init__(self,num,ctx):
+    def __init__(self,num=None,ctx):
         super().__init__()
-        self.num = num
+        self.latest = int(await latest())
+        if num is None:
+            self.num = self.latest
+        else:
+            self.num = int(num)
         self.ctx = ctx
     async def send_initial_message(self,channel,ctx):
         return await channel.send(embed = await getcomic(self.ctx,self.num))
     @menus.button(left)
     async def left(self,payload):
-        if self.num is None:
-            self.num=await latest()
-        self.num=int(self.num)-1
-        await self.message.edit(embed = await getcomic(self.ctx,self.num))
+        if self.num != 1:
+            self.num=int(self.num)-1
+            await self.message.edit(embed = await getcomic(self.ctx,self.num))
     @menus.button(right)
     async def right(self,payload):
-        if self.num is None:
-            self.num=(await latest())-1
-        self.num=int(self.num)+1
-        await self.message.edit(embed = await getcomic(self.ctx,self.num))
+        if self.num != self.latest:
+            self.num=int(self.num)+1
+            await self.message.edit(embed = await getcomic(self.ctx,self.num))
     @menus.button(rand)#random comic
     async def rand(self,payload):
-        num = await latest()
-        self.num = random.randint(1,int(num))
+        self.num = random.randint(1,self.latest)
         await self.message.edit(embed = await getcomic(self.ctx,self.num))
 
 @bot.command(aliases=['x']) #command acceptor
