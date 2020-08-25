@@ -16,7 +16,7 @@ To install the bot you can just run the following command:
     
 Running
 ---------
-Make a Discord bot account and copy the token. Save the token as an environment variable using the key `DISCORD_TOKEN`. Once done just run the following commands:
+Make a Discord bot account and copy the token. Save the token as an environment variable using the key `DISCORD_BOT_TOKEN`. Once done just run the following commands:
 
 
     $ cd xkcdbot
