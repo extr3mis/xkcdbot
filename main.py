@@ -1,5 +1,3 @@
-
-  
 #Required Libs
 import discord
 import json
