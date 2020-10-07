@@ -1,4 +1,4 @@
-<img src='https://img.shields.io/badge/Python-3-blue'> <img src='https://img.shields.io/badge/license-MIT-green'> <img src='https://img.shields.io/badge/async-enabled-blue'> <img src='https://img.shields.io/badge/dependecy-discord.py-blue'> <a href='https://discord.com/users/418872989765992458'><img src='https://img.shields.io/badge/discord-Extr3mis%239663-blueviolet'></a>
+<img src='https://img.shields.io/badge/Python-3-blue'> <img src='https://img.shields.io/badge/license-MIT-green'> <img src='https://img.shields.io/badge/async-enabled-blue'> <a href='https://discord.com/users/418872989765992458'><img src='https://img.shields.io/badge/discord-Extr3mis%239663-blueviolet'></a>
 
 # xkcdbot
 A Discord bot written in discord.py for getting xkcd comics. Made with asyncio and aiohttp to be block-free. 
